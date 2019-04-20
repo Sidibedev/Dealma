@@ -108,7 +108,7 @@ return(
                
             </ListItem>
 
-            <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate("Main")}>
+            <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate("NewAnnonce")}>
 
             <Text style={{color : 'white' , fontFamily:'montserrat-bold',fontSize : 16}}>Nouvelle annonce</Text>
      

@@ -10,6 +10,7 @@ import DetailAnnonce from '../screens/DetailAnnonce';
 import AllAnnonce from '../screens/AllAnnonce';
 import UpdateAnnonce from '../screens/UpdateAnnonce';
 import AnnonceByCategorie from '../screens/AnnonceByCategorie';
+import NewAnnonce from '../screens/NewAnnonce';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -59,7 +60,8 @@ AnnonceStack.navigationOptions = {
 
 const ProfilStack = createStackNavigator({
   Settings: SettingsScreen,
-  UpdateAnnonce : UpdateAnnonce
+  UpdateAnnonce : UpdateAnnonce,
+  NewAnnonce:NewAnnonce
 });
 
 ProfilStack.navigationOptions = {

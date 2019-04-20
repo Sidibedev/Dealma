@@ -8,6 +8,11 @@ export default class UpdateAnnonce extends Component {
     };
   }
 
+  static navigationOptions = {
+
+    title:'Nissan'
+  }
+
   render() {
     return (
       <View>
