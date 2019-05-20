@@ -19,9 +19,9 @@ export default class DetailAnnonce extends Component {
      <Slideshow 
      height={400}
       dataSource={[
+        { url : require('../assets/images/back.jpg') },
         { url:'http://placeimg.com/640/480/any' },
-        { url:'http://placeimg.com/640/480/any' },
-        { url:'http://placeimg.com/640/480/any' }
+        
     ]}/>
 
     <View style={{marginTop : -50 , height:230 , width : '90%' , backgroundColor:'white' , alignSelf:'center' , borderRadius:15,...Platform.select({
@@ -37,13 +37,13 @@ export default class DetailAnnonce extends Component {
       }) , padding:20}}>
 
 
-      <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , color : "black"}}>Nissan</Text>
+      <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , color : "black"}}>Broderie Super cent</Text>
 
-      <Text style={{fontFamily:'montserrat' , fontSize : 13 , color : "gray" , marginTop:10}}>Some description about the product.Some description about the product</Text>
+      <Text style={{fontFamily:'montserrat' , fontSize : 13 , color : "gray" , marginTop:10}}>Modele broderie super cent tres à la mode.</Text>
 
       <View style={{flexDirection : 'row' , justifyContent:'space-between' , marginTop : 30}}>
 
-      <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , color : "black" , marginTop : 5}}>600 000 Fcfa</Text>
+      <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , color : "black" , marginTop : 5}}>50 000 Fcfa</Text>
 
       <Button iconLeft light style={{paddingRight : 5 , backgroundColor : "#e51413"}}>
             <Icon name='call' style={{color:"white"}}/>

@@ -23,7 +23,7 @@ export default class AnnonceByCategorie extends Component {
 
       <View   style={{ width:'90%' , height:300  , borderRadius : 10, marginTop : 20 , alignSelf:'center' }}>
 
-      <ImageBackground  resizeMethod="resize" source={require('../assets/images/voiture.jpg')} imageStyle={{borderRadius : 10}} style={{ height : '100%'  , width : '100%' }}>
+      <ImageBackground  resizeMethod="resize" source={item.photo} imageStyle={{borderRadius : 10}} style={{ height : '100%'  , width : '100%' }}>
 
 
 
@@ -40,13 +40,13 @@ export default class AnnonceByCategorie extends Component {
       })}} onPress={()=>this.props.navigation.navigate("DetailsEvent" , {id : item.id})}>
 
       <View style={{margin : 5}}>
-      <Text style = {{  fontSize:18 , color :"black" , marginTop : 7 ,fontFamily:'montserrat-bold'}}>Nissan</Text>
+      <Text style = {{  fontSize:18 , color :"black" , marginTop : 7 ,fontFamily:'montserrat-bold'}}>{item.nom}</Text>
 
       <View style={{flexDirection: 'row', justifyContent:'space-between',}}>
 
       <View>
 
-      <Text style = {{  fontSize:13 , fontFamily:'montserrat', color :"gray" , marginTop : 7}}> 600 000 fcfa </Text>
+      <Text style = {{  fontSize:13 , fontFamily:'montserrat', color :"gray" , marginTop : 7}}> {item.prix} fcfa </Text>
 
 
 
@@ -92,7 +92,7 @@ export default class AnnonceByCategorie extends Component {
         
 
 
-       <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , textAlign:'center' , color : "black" , marginTop: 30}}>Voitures </Text>
+       <Text style={{fontFamily:'montserrat-bold' , fontSize : 18 , textAlign:'center' , color : "black" , marginTop: 30}}>Mode </Text>
 
 
 
@@ -100,7 +100,7 @@ export default class AnnonceByCategorie extends Component {
 
 
              <FlatList
-            data={[{"id" : 1} , {"id" : 2}, {"id" : 3}]}
+            data={[{"id" : 1 , photo:require('../assets/images/back.jpg') ,prix:100000  , nom:"Broderie super cent"} , {"id" : 2 , photo:require('../assets/images/boutique2.jpeg') , nom : "Anita belle" , prix : 50000}, {"id" : 3 , photo:require('../assets/images/boutique2.jpeg')}]}
            renderItem={this.renderEvent}
            keyExtractor={item => item.id.toString()}
 

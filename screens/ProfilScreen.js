@@ -132,11 +132,11 @@ return(
             </ListItem>
             <ListItem thumbnail>
             <Left>
-              <Thumbnail square source={require('../assets/images/voiture.jpg')} />
+              <Thumbnail square source={require('../assets/images/back.jpg')} />
             </Left>
             <Body>
-              <Text style={{fontFamily:'montserrat-bold' , fontSize : 15}}>Nissan</Text>
-              <Text style={{fontFamily:'montserrat' , fontSize : 12}}>600 000 Fcfa</Text>
+              <Text style={{fontFamily:'montserrat-bold' , fontSize : 15}}>Broderie super cent</Text>
+              <Text style={{fontFamily:'montserrat' , fontSize : 12}}>50 000 Fcfa</Text>
             </Body>
             <Right>
               <Button transparent>
@@ -144,27 +144,14 @@ return(
               </Button>
             </Right>
           </ListItem>
-          <ListItem thumbnail>
-          <Left>
-            <Thumbnail square source={require('../assets/images/voiture.jpg')} />
-          </Left>
-          <Body>
-            <Text style={{fontFamily:'montserrat-bold' , fontSize : 15}}>Nissan</Text>
-            <Text style={{fontFamily:'montserrat' , fontSize : 12}}>600 000 Fcfa</Text>
-          </Body>
-          <Right>
-            <Button transparent>
-              <Text style={{fontSize:10 , color:"#e51413"}}>voir</Text>
-            </Button>
-          </Right>
-        </ListItem>
+         
         <ListItem thumbnail>
         <Left>
-          <Thumbnail square source={require('../assets/images/voiture.jpg')} />
+          <Thumbnail square source={require('../assets/images/boutique2.jpeg')} />
         </Left>
         <Body>
-          <Text style={{fontFamily:'montserrat-bold' , fontSize : 15}}>Nissan</Text>
-          <Text style={{fontFamily:'montserrat' , fontSize : 12}}>600 000 Fcfa</Text>
+          <Text style={{fontFamily:'montserrat-bold' , fontSize : 15}}>Anita la belle</Text>
+          <Text style={{fontFamily:'montserrat' , fontSize : 12}}>100 000 Fcfa</Text>
         </Body>
         <Right>
           <Button transparent>
